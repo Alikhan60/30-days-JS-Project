@@ -32,8 +32,7 @@ const passwordGenrater = (password = "") => {
   if (password.length < totalChar.value) {
     return passwordGenrater(password);
   }
-passBox.innerText = truncateString(password, totalChar.value);
-  
+
 };
 
 document.getElementById("btn").addEventListener("click", function () {
@@ -47,3 +46,4 @@ const truncateString = (str, num) => {
     return str;
   }
 };
+  passBox.innerText = truncateString(password, totalChar.value);
